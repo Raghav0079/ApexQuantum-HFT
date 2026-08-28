@@ -15,9 +15,7 @@ function(apply_hft_compiler_flags TARGET_NAME)
             -Wno-padded                 # Silence alignment padding warnings
         )
         
-        # Enable Link-Time Optimization (LTO) for Release builds
         target_link_options(${TARGET_NAME} PRIVATE
-            $<$<CONFIG:Release>:-flto>
             $<$<CONFIG:Release>:-s>      # Strip symbol tables in release builds
         )
     elseif (MSVC)

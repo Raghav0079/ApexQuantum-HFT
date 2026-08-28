@@ -3,8 +3,11 @@
 namespace apexquantum {
 
 void OrderBook::add(const Order& order) {
-    auto& levels = order.side == Side::Buy ? bids_ : asks_;
-    levels[order.price] += order.quantity;
+    if (order.side == Side::Buy) {
+        bids_[order.price] += order.quantity;
+        return;
+    }
+    asks_[order.price] += order.quantity;
 }
 
 std::optional<Price> OrderBook::best_bid() const {
