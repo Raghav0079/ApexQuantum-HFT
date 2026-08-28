@@ -1,4 +1,15 @@
 services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: apexquantum
+      POSTGRES_USER: apexquantum
+      POSTGRES_PASSWORD: apexquantum
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
   redis:
     image: redis:7-alpine
     ports:
@@ -17,6 +28,13 @@ services:
       dockerfile: docker/Dockerfile.java
     environment:
       REDIS_URL: redis://redis:6379
+      POSTGRES_URL: jdbc:postgresql://postgres:5432/apexquantum
+      POSTGRES_USER: apexquantum
+      POSTGRES_PASSWORD: apexquantum
       APEXQUANTUM_ENV: container
     depends_on:
       - redis
+      - postgres
+
+volumes:
+  postgres-data:
