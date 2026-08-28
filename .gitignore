@@ -1,0 +1,24 @@
+# Build Directories & Binaries
+build/
+bin/
+lib/
+*.exe
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+
+# IDE & Tooling
+.vscode/
+.idea/
+*.user
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Java
+target/
+*.class
