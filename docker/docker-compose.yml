@@ -1,0 +1,22 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  execution-engine:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.cpp
+    depends_on:
+      - redis
+
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.java
+    environment:
+      REDIS_URL: redis://redis:6379
+      APEXQUANTUM_ENV: container
+    depends_on:
+      - redis
