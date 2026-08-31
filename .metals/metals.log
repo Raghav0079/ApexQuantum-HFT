@@ -25,3 +25,51 @@
 2026.08.28 21:01:22 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\OrderRecord.java
 2026.08.28 21:01:22 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\config\ServiceConfig.java
 2026.08.28 21:01:22 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\PostgresOrderRepository.java
+2026.08.28 21:02:51 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\config\ServiceConfig.java. Using fallback presentation compiler.
+2026.08.28 21:02:52 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\config\ServiceConfig.java
+Aug 28, 2026 9:02:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2026.08.28 21:02:51 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\config\ServiceConfig.java. Using fallback presentation compiler.
+2026.08.28 21:02:52 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\config\ServiceConfig.java. Using fallback presentation compiler.
+2026.08.28 21:02:56 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\config\ServiceConfig.java. Using fallback presentation compiler.
+2026.08.28 21:03:01 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\ipc\ExecutionEngineClient.java. Using fallback presentation compiler.
+2026.08.28 21:03:01 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\ipc\ExecutionEngineClient.java
+2026.08.28 21:03:01 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\ipc\ExecutionEngineClient.java. Using fallback presentation compiler.
+2026.08.28 21:03:01 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\ipc\ExecutionEngineClient.java. Using fallback presentation compiler.
+2026.08.28 21:03:05 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\OrderRecord.java. Using fallback presentation compiler.
+2026.08.28 21:03:05 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\OrderRecord.java
+Aug 28, 2026 9:03:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 25
+2026.08.28 21:03:05 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\OrderRecord.java. Using fallback presentation compiler.
+2026.08.28 21:03:05 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\OrderRecord.java. Using fallback presentation compiler.
+2026.08.28 21:03:05 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\OrderRecord.java. Using fallback presentation compiler.
+2026.08.28 21:03:09 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\PostgresOrderRepository.java. Using fallback presentation compiler.
+2026.08.28 21:03:09 WARN  no build target for: C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\PostgresOrderRepository.java
+Aug 28, 2026 9:03:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 38
+2026.08.28 21:03:09 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\PostgresOrderRepository.java. Using fallback presentation compiler.
+2026.08.28 21:03:09 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\PostgresOrderRepository.java. Using fallback presentation compiler.
+2026.08.28 21:03:09 INFO  no build target found for C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT\backend-java\src\main\java\com\apexquantum\persistence\PostgresOrderRepository.java. Using fallback presentation compiler.
+2026.08.28 21:24:59 INFO  Shutting down server
+2026.08.28 21:24:59 INFO  Memory monitor stopped
+2026.08.28 21:24:59 INFO  shutting down Metals
+2026.08.28 21:24:59 INFO  Exiting server
+2026.08.28 21:24:59 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:214)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:840)
+
+2026.08.28 21:40:28 INFO  Started: Metals version 1.6.8 in folders 'C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT' for client Visual Studio Code 1.135.0.
+2026.08.28 21:40:28 INFO  Memory monitor started
+2026.08.28 21:40:30 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.08.31 21:45:55 INFO  Started: Metals version 1.6.8 in folders 'C:\Users\Raghav\OneDrive\Desktop\Projects\ApexQuantum-HFT' for client Visual Studio Code 1.135.0.
+2026.08.31 21:45:55 INFO  Memory monitor started
+2026.08.31 21:46:00 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
