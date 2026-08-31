@@ -1,2 +1,2 @@
-apexquantum_core_tests 1 0.09222
+apexquantum_core_tests 2 0.0731895
 ---

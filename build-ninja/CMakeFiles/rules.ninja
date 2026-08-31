@@ -7,7 +7,7 @@
 
 # =============================================================================
 # Project: ApexQuantumHFT
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 # =============================================================================
 
@@ -22,7 +22,7 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__apexquantum_core_Release
+rule CXX_SCAN__apexquantum_core_Debug
   depfile = $DEP_FILE
   command = C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -31,7 +31,7 @@ rule CXX_SCAN__apexquantum_core_Release
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__apexquantum_core_Release
+rule CXX_DYNDEP__apexquantum_core_Debug
   command = C:\w64devkit\bin\cmake.exe -E cmake_ninja_dyndep --tdi=core-cpp\CMakeFiles\apexquantum_core.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
@@ -42,7 +42,7 @@ rule CXX_DYNDEP__apexquantum_core_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__apexquantum_core_scanned_Release
+rule CXX_COMPILER__apexquantum_core_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -52,7 +52,7 @@ rule CXX_COMPILER__apexquantum_core_scanned_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__apexquantum_core_unscanned_Release
+rule CXX_COMPILER__apexquantum_core_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -62,7 +62,7 @@ rule CXX_COMPILER__apexquantum_core_unscanned_Release
 #############################################
 # Rule for linking CXX static library.
 
-rule CXX_STATIC_LIBRARY_LINKER__apexquantum_core_Release
+rule CXX_STATIC_LIBRARY_LINKER__apexquantum_core_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\w64devkit\bin\cmake.exe -E rm -f $TARGET_FILE && C:\w64devkit\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && C:\w64devkit\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
@@ -71,7 +71,7 @@ rule CXX_STATIC_LIBRARY_LINKER__apexquantum_core_Release
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__apexquantum_engine_Release
+rule CXX_SCAN__apexquantum_engine_Debug
   depfile = $DEP_FILE
   command = C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -80,7 +80,7 @@ rule CXX_SCAN__apexquantum_engine_Release
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__apexquantum_engine_Release
+rule CXX_DYNDEP__apexquantum_engine_Debug
   command = C:\w64devkit\bin\cmake.exe -E cmake_ninja_dyndep --tdi=core-cpp\CMakeFiles\apexquantum_engine.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
@@ -91,7 +91,7 @@ rule CXX_DYNDEP__apexquantum_engine_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__apexquantum_engine_scanned_Release
+rule CXX_COMPILER__apexquantum_engine_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -101,7 +101,7 @@ rule CXX_COMPILER__apexquantum_engine_scanned_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__apexquantum_engine_unscanned_Release
+rule CXX_COMPILER__apexquantum_engine_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -111,7 +111,7 @@ rule CXX_COMPILER__apexquantum_engine_unscanned_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__apexquantum_engine_Release
+rule CXX_EXECUTABLE_LINKER__apexquantum_engine_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\w64devkit\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -120,7 +120,7 @@ rule CXX_EXECUTABLE_LINKER__apexquantum_engine_Release
 #############################################
 # Rule for generating CXX dependencies.
 
-rule CXX_SCAN__apexquantum_core_tests_Release
+rule CXX_SCAN__apexquantum_core_tests_Debug
   depfile = $DEP_FILE
   command = C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -E -x c++ $in -MT $DYNDEP_INTERMEDIATE_FILE -MD -MF $DEP_FILE -fmodules-ts -fdeps-file=$DYNDEP_INTERMEDIATE_FILE -fdeps-target=$OBJ_FILE -fdeps-format=p1689r5 -o $PREPROCESSED_OUTPUT_FILE
   description = Scanning $in for CXX dependencies
@@ -129,7 +129,7 @@ rule CXX_SCAN__apexquantum_core_tests_Release
 #############################################
 # Rule to generate ninja dyndep files for CXX.
 
-rule CXX_DYNDEP__apexquantum_core_tests_Release
+rule CXX_DYNDEP__apexquantum_core_tests_Debug
   command = C:\w64devkit\bin\cmake.exe -E cmake_ninja_dyndep --tdi=core-cpp\CMakeFiles\apexquantum_core_tests.dir\CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
@@ -140,7 +140,7 @@ rule CXX_DYNDEP__apexquantum_core_tests_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__apexquantum_core_tests_scanned_Release
+rule CXX_COMPILER__apexquantum_core_tests_scanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -fmodules-ts -fmodule-mapper=$DYNDEP_MODULE_MAP_FILE -MD -fdeps-format=p1689r5 -x c++ -o $out -c $in
@@ -150,7 +150,7 @@ rule CXX_COMPILER__apexquantum_core_tests_scanned_Release
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__apexquantum_core_tests_unscanned_Release
+rule CXX_COMPILER__apexquantum_core_tests_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\w64devkit\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -160,7 +160,7 @@ rule CXX_COMPILER__apexquantum_core_tests_unscanned_Release
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__apexquantum_core_tests_Release
+rule CXX_EXECUTABLE_LINKER__apexquantum_core_tests_Debug
   command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\w64devkit\bin\c++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

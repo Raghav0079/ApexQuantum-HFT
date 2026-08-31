@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: ApexQuantumHFT
-# Configurations: Release
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Release
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -90,46 +90,46 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_apexquantum_core: phony || .
 
-build core-cpp/CMakeFiles/apexquantum_core.dir/src/execution_engine.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/execution_engine.cpp || cmake_object_order_depends_target_apexquantum_core
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_core.dir/src/execution_engine.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/execution_engine.cpp || cmake_object_order_depends_target_apexquantum_core
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_core.dir\src\execution_engine.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_core.dir\src
   TARGET_SUPPORT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
 
-build core-cpp/CMakeFiles/apexquantum_core.dir/src/market_data/market_data_parser.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/market_data/market_data_parser.cpp || cmake_object_order_depends_target_apexquantum_core
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_core.dir/src/market_data/market_data_parser.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/market_data/market_data_parser.cpp || cmake_object_order_depends_target_apexquantum_core
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_core.dir\src\market_data\market_data_parser.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_core.dir\src\market_data
   TARGET_SUPPORT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
 
-build core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/matching/matching_engine.cpp || cmake_object_order_depends_target_apexquantum_core
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/matching/matching_engine.cpp || cmake_object_order_depends_target_apexquantum_core
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_core.dir\src\matching\matching_engine.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_core.dir\src\matching
   TARGET_SUPPORT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
 
-build core-cpp/CMakeFiles/apexquantum_core.dir/src/network/udp_socket.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/network/udp_socket.cpp || cmake_object_order_depends_target_apexquantum_core
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_core.dir/src/network/udp_socket.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/network/udp_socket.cpp || cmake_object_order_depends_target_apexquantum_core
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_core.dir\src\network\udp_socket.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_core.dir\src\network
   TARGET_SUPPORT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
 
-build core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/order_book/order_book.cpp || cmake_object_order_depends_target_apexquantum_core
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj: CXX_COMPILER__apexquantum_core_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/order_book/order_book.cpp || cmake_object_order_depends_target_apexquantum_core
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_core.dir\src\order_book\order_book.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_core.dir\src\order_book
@@ -143,9 +143,9 @@ build core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj
 #############################################
 # Link the static library core-cpp\libapexquantum_core.a
 
-build core-cpp/libapexquantum_core.a: CXX_STATIC_LIBRARY_LINKER__apexquantum_core_Release core-cpp/CMakeFiles/apexquantum_core.dir/src/execution_engine.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/market_data/market_data_parser.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/network/udp_socket.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj
-  CONFIG = Release
-  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+build core-cpp/libapexquantum_core.a: CXX_STATIC_LIBRARY_LINKER__apexquantum_core_Debug core-cpp/CMakeFiles/apexquantum_core.dir/src/execution_engine.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/market_data/market_data_parser.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/network/udp_socket.cpp.obj core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -162,10 +162,10 @@ build core-cpp/libapexquantum_core.a: CXX_STATIC_LIBRARY_LINKER__apexquantum_cor
 
 build cmake_object_order_depends_target_apexquantum_engine: phony || cmake_object_order_depends_target_apexquantum_core
 
-build core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj: CXX_COMPILER__apexquantum_engine_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/main.cpp || cmake_object_order_depends_target_apexquantum_engine
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj: CXX_COMPILER__apexquantum_engine_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/src/main.cpp || cmake_object_order_depends_target_apexquantum_engine
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_engine.dir\src\main.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_engine.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_engine.dir\src
@@ -179,10 +179,9 @@ build core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj: CXX_COMPILER_
 #############################################
 # Link the executable core-cpp\apexquantum_engine.exe
 
-build core-cpp/apexquantum_engine.exe: CXX_EXECUTABLE_LINKER__apexquantum_engine_Release core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj | core-cpp/libapexquantum_core.a || core-cpp/libapexquantum_core.a
-  CONFIG = Release
-  FLAGS = -O3 -DNDEBUG
-  LINK_FLAGS = -s
+build core-cpp/apexquantum_engine.exe: CXX_EXECUTABLE_LINKER__apexquantum_engine_Debug core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj | core-cpp/libapexquantum_core.a || core-cpp/libapexquantum_core.a
+  CONFIG = Debug
+  FLAGS = -g
   LINK_LIBRARIES = core-cpp/libapexquantum_core.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_engine.dir
   POST_BUILD = cd .
@@ -201,10 +200,10 @@ build core-cpp/apexquantum_engine.exe: CXX_EXECUTABLE_LINKER__apexquantum_engine
 
 build cmake_object_order_depends_target_apexquantum_core_tests: phony || cmake_object_order_depends_target_apexquantum_core
 
-build core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj: CXX_COMPILER__apexquantum_core_tests_unscanned_Release C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/tests/core_tests.cpp || cmake_object_order_depends_target_apexquantum_core_tests
-  CONFIG = Release
+build core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj: CXX_COMPILER__apexquantum_core_tests_unscanned_Debug C$:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/tests/core_tests.cpp || cmake_object_order_depends_target_apexquantum_core_tests
+  CONFIG = Debug
   DEP_FILE = core-cpp\CMakeFiles\apexquantum_core_tests.dir\tests\core_tests.cpp.obj.d
-  FLAGS = -O3 -DNDEBUG -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
+  FLAGS = -g -O3 -march=native -funroll-loops -ffast-math -Wall -Wextra -Wpedantic -Wno-padded -fno-omit-frame-pointer
   INCLUDES = -IC:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/core-cpp/include
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core_tests.dir
   OBJECT_FILE_DIR = core-cpp\CMakeFiles\apexquantum_core_tests.dir\tests
@@ -218,10 +217,9 @@ build core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj: C
 #############################################
 # Link the executable core-cpp\apexquantum_core_tests.exe
 
-build core-cpp/apexquantum_core_tests.exe: CXX_EXECUTABLE_LINKER__apexquantum_core_tests_Release core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj | core-cpp/libapexquantum_core.a || core-cpp/libapexquantum_core.a
-  CONFIG = Release
-  FLAGS = -O3 -DNDEBUG
-  LINK_FLAGS = -s
+build core-cpp/apexquantum_core_tests.exe: CXX_EXECUTABLE_LINKER__apexquantum_core_tests_Debug core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj | core-cpp/libapexquantum_core.a || core-cpp/libapexquantum_core.a
+  CONFIG = Debug
+  FLAGS = -g
   LINK_LIBRARIES = core-cpp/libapexquantum_core.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = core-cpp\CMakeFiles\apexquantum_core_tests.dir
   POST_BUILD = cd .

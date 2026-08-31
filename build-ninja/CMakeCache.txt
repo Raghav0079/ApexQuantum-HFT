@@ -43,7 +43,7 @@ CMAKE_AR:FILEPATH=C:/w64devkit/bin/ar.exe
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=C:/w64devkit/bin/c++.exe
@@ -254,6 +254,12 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Enable AddressSanitizer and UndefinedBehaviorSanitizer
+ENABLE_ASAN:BOOL=ON
+
+//Enable ThreadSanitizer
+ENABLE_TSAN:BOOL=OFF
 
 
 ########################
