@@ -1,0 +1,13 @@
+# ninja log v7
+56	314	8098978293133763	core-cpp/CMakeFiles/apexquantum_core.dir/src/execution_engine.cpp.obj	5ba56d73a3820895
+111	316	8098978293693868	core-cpp/CMakeFiles/apexquantum_core.dir/src/network/udp_socket.cpp.obj	9291db20589f7b59
+155	343	8098978294139681	core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj	9294364fa4a76300
+89	511	8098978293473824	core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj	2e816e0a649514fa
+72	538	8098978293303802	core-cpp/CMakeFiles/apexquantum_core.dir/src/market_data/market_data_parser.cpp.obj	4e661800b5f6b779
+176	550	8098978294339601	core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj	39b56ece4ed8fc6
+194	1860	8098978294519571	core-cpp/CMakeFiles/apexquantum_latency_bench.dir/bench/latency_bench.cpp.obj	f86fcd0da75fbfac
+134	6120	8098978293919636	core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj	2dbb766a9a0d0419
+6121	6618	8098978353785372	core-cpp/libapexquantum_core.a	851d18fd9d73d648
+6618	6750	8098978358760871	core-cpp/apexquantum_engine.exe	2aa88b4f80fd8bc0
+6626	7281	8098978358830919	core-cpp/apexquantum_core_tests.exe	eb5848bddacb2e0c
+6634	7458	8098978358910940	core-cpp/apexquantum_latency_bench.exe	d999496ebf82afbf
