@@ -19,6 +19,8 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile.cpp
+    environment:
+      REDIS_URL: redis://redis:6379
     depends_on:
       - redis
 
@@ -35,6 +37,15 @@ services:
     depends_on:
       - redis
       - postgres
+
+  analytics:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.analytics
+    environment:
+      REDIS_URL: redis://redis:6379
+    depends_on:
+      - redis
 
 volumes:
   postgres-data:

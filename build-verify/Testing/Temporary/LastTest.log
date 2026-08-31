@@ -1,0 +1,18 @@
+Start testing: Aug 31 22:30 India Standard Time
+----------------------------------------------------------
+1/1 Testing: apexquantum_core_tests
+1/1 Test: apexquantum_core_tests
+Command: "C:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/build-verify/core-cpp/apexquantum_core_tests.exe"
+Directory: C:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/build-verify/core-cpp
+"apexquantum_core_tests" start time: Aug 31 22:30 India Standard Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"apexquantum_core_tests" end time: Aug 31 22:30 India Standard Time
+"apexquantum_core_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 31 22:30 India Standard Time
