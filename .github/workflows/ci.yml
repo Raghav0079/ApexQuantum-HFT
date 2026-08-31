@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  cpp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lukka/get-cmake@latest
+      - name: Install build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build g++
+      - name: Configure C++ core
+        run: cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DAPEXQ_BUILD_TESTS=ON
+      - name: Build C++ core
+        run: cmake --build build
+      - name: Run C++ tests
+        run: ctest --test-dir build --output-on-failure
+
+  java:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build and test backend-java
+        working-directory: backend-java
+        run: mvn test
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install python tooling
+        working-directory: analytics-python
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run pytest if present
+        working-directory: analytics-python
+        run: |
+          if [ -d tests ] || find . -maxdepth 2 -name 'test_*.py' -o -name '*_test.py' | grep -q .; then
+            pytest -q
+          else
+            ruff check .
+          fi
