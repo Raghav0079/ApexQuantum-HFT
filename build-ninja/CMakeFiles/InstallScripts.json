@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/build-ninja/cmake_install.cmake",
+		"C:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/build-ninja/core-cpp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

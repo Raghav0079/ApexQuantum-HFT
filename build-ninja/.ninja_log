@@ -1,0 +1,11 @@
+# ninja log v7
+45	308	8098964782040103	core-cpp/CMakeFiles/apexquantum_core.dir/src/execution_engine.cpp.obj	5ba56d73a3820895
+73	312	8098964782330112	core-cpp/CMakeFiles/apexquantum_core.dir/src/network/udp_socket.cpp.obj	9291db20589f7b59
+90	349	8098964782500135	core-cpp/CMakeFiles/apexquantum_engine.dir/src/main.cpp.obj	9294364fa4a76300
+56	2662	8098964782150142	core-cpp/CMakeFiles/apexquantum_core.dir/src/market_data/market_data_parser.cpp.obj	4e661800b5f6b779
+64	2664	8098964782230117	core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj	2e816e0a649514fa
+100	3630	8098964782620225	core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj	39b56ece4ed8fc6
+80	3738	8098964782400110	core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj	2dbb766a9a0d0419
+3739	4806	8098964818965276	core-cpp/libapexquantum_core.a	851d18fd9d73d648
+4814	5005	8098964829712436	core-cpp/apexquantum_core_tests.exe	eb5848bddacb2e0c
+4806	5005	8098964829648952	core-cpp/apexquantum_engine.exe	2aa88b4f80fd8bc0

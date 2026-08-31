@@ -5,22 +5,23 @@ function(apply_hft_compiler_flags TARGET_NAME)
 
     if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
         target_compile_options(${TARGET_NAME} PRIVATE
-            -O3                         # Maximum optimization level
-            -march=native               # Enable all AVX2/AVX-512 instructions on host hardware
-            -funroll-loops              # Unroll loops for branch optimization
-            -ffast-math                 # High-speed floating point math (trade safety for speed)
+            -O3
+            -march=native
+            -funroll-loops
+            -ffast-math
             -Wall
             -Wextra
             -Wpedantic
-            -Wno-padded                 # Silence alignment padding warnings
+            -Wno-padded
+            -fno-omit-frame-pointer
         )
-        
+
         target_link_options(${TARGET_NAME} PRIVATE
-            $<$<CONFIG:Release>:-s>      # Strip symbol tables in release builds
+            $<$<CONFIG:Release>:-s>
         )
     elseif (MSVC)
         target_compile_options(${TARGET_NAME} PRIVATE
-            /O2 /arch:AVX2 /std:c++20
+            /O2 /arch:AVX2 /std:c++20 /permissive-
         )
     endif()
 endfunction()
