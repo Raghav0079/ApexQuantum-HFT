@@ -40,9 +40,9 @@ private:
     std::size_t price_to_index(Price price) const noexcept;
     std::uint32_t acquire_slot() noexcept;
 
-    inline static alignas(64) std::array<PriceLevel, MaxLevels> bids_{};
-    inline static alignas(64) std::array<PriceLevel, MaxLevels> asks_{};
-    inline static alignas(64) std::array<OrderNode, MaxOrders> orders_{};
+    alignas(64) inline static std::array<PriceLevel, MaxLevels> bids_{};
+    alignas(64) inline static std::array<PriceLevel, MaxLevels> asks_{};
+    alignas(64) inline static std::array<OrderNode, MaxOrders> orders_{};
 };
 
 }  // namespace apexquantum

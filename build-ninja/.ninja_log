@@ -9,3 +9,9 @@
 3739	4806	8098964818965276	core-cpp/libapexquantum_core.a	851d18fd9d73d648
 4814	5005	8098964829712436	core-cpp/apexquantum_core_tests.exe	eb5848bddacb2e0c
 4806	5005	8098964829648952	core-cpp/apexquantum_engine.exe	2aa88b4f80fd8bc0
+315	823	8098966123417019	core-cpp/CMakeFiles/apexquantum_core_tests.dir/tests/core_tests.cpp.obj	39b56ece4ed8fc6
+275	906	8098966122976898	core-cpp/CMakeFiles/apexquantum_core.dir/src/matching/matching_engine.cpp.obj	2e816e0a649514fa
+294	7897	8098966123216894	core-cpp/CMakeFiles/apexquantum_core.dir/src/order_book/order_book.cpp.obj	2dbb766a9a0d0419
+7897	8494	8098966199192293	core-cpp/libapexquantum_core.a	851d18fd9d73d648
+8494	8653	8098966205160073	core-cpp/apexquantum_engine.exe	2aa88b4f80fd8bc0
+8503	9112	8098966205250078	core-cpp/apexquantum_core_tests.exe	eb5848bddacb2e0c

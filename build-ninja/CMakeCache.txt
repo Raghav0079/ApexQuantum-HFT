@@ -17,8 +17,14 @@
 //Build C++ tests
 APEXQUANTUM_BUILD_TESTS:BOOL=ON
 
-//No help, variable specified on the command line.
-APEXQ_BUILD_TESTS:UNINITIALIZED=ON
+//Build C++ tests
+APEXQ_BUILD_TESTS:BOOL=ON
+
+//Enable Google Benchmark
+APEXQ_ENABLE_BENCHMARKS:BOOL=OFF
+
+//Enable ASan/UBSan/LSan
+APEXQ_ENABLE_SANITIZERS:BOOL=OFF
 
 //Value Computed by CMake
 ApexQuantumHFT_BINARY_DIR:STATIC=C:/Users/Raghav/OneDrive/Desktop/Projects/ApexQuantum-HFT/build-ninja
